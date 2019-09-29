@@ -1,0 +1,50 @@
+/* 设置全局样式 */
+
+/* （1）页面高度100%，默认字体28upx,默认行高1.8，背景颜色 */
+page{
+	height: 100%;
+	font-size: 28upx;
+	line-height: 1.8;
+	background: #FFFFFF;
+}
+
+/* (2) 图片默认100%宽度 */
+image{width: 100%;}
+
+/* 主色调 */
+/* 主背景颜色（橙色） */
+.main-bg-color{background: #fd6801;}
+/* 主点击背景颜色（淡橙色） */
+.main-bg-hover-color{background: rgba(253, 104, 1, 0.85);}
+/* 主字体颜色（橙色） */
+.main-text-color{color: #FD6801;}
+/* 主边框颜色 （淡灰色）*/
+.main-border-color{border-color: #F1F1F1;}
+
+/* input点击输入时边框颜色  */
+.input-border-color{
+	border-color: #FD6801!important;
+}
+
+/* 公共按钮 */
+.user-set-btn{
+	width: 100%;
+	margin: 20upx 0;
+	background: #FFCC00!important;
+	border: 0!important;
+	color: #FFFFFF!important;
+}
+.user-set-btn-disable{
+	background: #F4F4F4!important;
+	border: 1upx solid #EEEEEE!important;
+	color: #909090!important;
+}
+/* 公共input */
+.common-input{
+	font-size: 30upx;
+	border-bottom: 1upx solid #F4F4F4;
+}
+/* 主题上下垂直方向 30px间距 */
+.body{
+	padding: 0 30upx!important;
+}

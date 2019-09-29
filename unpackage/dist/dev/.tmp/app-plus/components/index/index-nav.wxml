@@ -1,0 +1,1 @@
+<view class="j-center row p-3"><block wx:for="{{indexnav}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="span-4 d-flex flex-column a-center j-center index-nav"><image style="width:60rpx;height:60rpx;" src="{{item.src}}" mode="widthFix"></image><text class="font text-muted">{{item.title}}</text></view></block></view>

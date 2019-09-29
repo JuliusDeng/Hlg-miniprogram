@@ -1,0 +1,15 @@
+<template>
+	<div>
+		<div style="height: 18px; background-color: #f5f5f5;"></div>
+	</div>
+</template>
+
+<script>
+	export default {
+		
+	}
+</script>
+
+<style>
+
+</style>

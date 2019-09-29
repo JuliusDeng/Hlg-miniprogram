@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "哈理工校园服务号",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#60C0D6",
+  "scrollIndicator": "none",
+  "bounce": "none",
+  "usingComponents": {
+    "divider": "/components/common/divider",
+    "swiper-image": "/components/index/swiper-image",
+    "index-nav": "/components/index/index-nav",
+    "slidex": "/components/index/slidex"
+  }
+}
