@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "index": "/pages/index/index",
+    "course": "/pages/course/course",
+    "community": "/pages/community/community"
+  }
+}

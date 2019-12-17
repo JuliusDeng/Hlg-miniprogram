@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"bottonx { background: #007AFF; min-height: ",[0,100],"; padding: 0; height: calc(",[0,100]," + env(safe-area-inset-bottom) / 2); padding-bottom: calc(env(safe-area-inset-bottom) / 2); }\n",],undefined,{path:"./pages/person/person.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/person/person.wxml') } }));

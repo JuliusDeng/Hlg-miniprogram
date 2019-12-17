@@ -7,8 +7,8 @@
 		"urlCheck": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.0",
-	"appid": "touristappid",
+	"libVersion": "2.9.2",
+	"appid": "wxaf7dfd0dec920036",
 	"projectname": "hlg",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
@@ -26,8 +26,15 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 0,
+			"list": [
+				{
+					"name": "表单",
+					"query": "",
+					"id": 0,
+					"pathName": "pages/start/start"
+				}
+			]
 		}
 	}
 }

@@ -1,50 +1,25 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/start/start",
+    "pages/index/index",
+    "pages/course/course",
+    "pages/community/community",
+    "pages/person/person"
   ],
   "subPackages": [],
   "window": {
-    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#0081ff",
     "navigationBarTitleText": "哈理工校园服务号",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
-  },
-  "tabBar": {
-    "color": "#B5B5B5",
-    "selectedColor": "#FA436A",
-    "borderStyle": "black",
-    "backgroundColor": "#FFFFFF",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "static/tabs/home.png",
-        "selectedIconPath": "static/tabs/home-ac.png"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "课表",
-        "iconPath": "static/tabs/course.png",
-        "selectedIconPath": "static/tabs/course-ac.png"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "社区",
-        "iconPath": "static/tabs/community.png",
-        "selectedIconPath": "static/tabs/community-ac.png"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "我的",
-        "iconPath": "static/tabs/personal.png",
-        "selectedIconPath": "static/tabs/personal-ac.png"
-      }
-    ]
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black"
   },
   "usingComponents": {
-    "divider": "/components/common/divider",
-    "loading": "/components/common/loading",
-    "loading-plus": "/common/mixin/loading-plus"
+    "index": "/pages/index/index",
+    "course": "/pages/course/course",
+    "community": "/pages/community/community",
+    "person": "/pages/person/person",
+    "cu-custom": "/colorui/components/cu-custom",
+    "divider": "/components/common/divider"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap23.json"
 }

@@ -11,7 +11,7 @@
     "code": "100"
   },
   "description": "",
-  "launch_path": "__uniapptabbar.html",
+  "launch_path": "__uniappview.html",
   "developer": {
     "name": "",
     "email": "",
@@ -24,7 +24,7 @@
   },
   "plus": {
     "useragent": {
-      "value": "uni-app appservice",
+      "value": "uni-app",
       "concatenate": true
     },
     "splashscreen": {
@@ -34,11 +34,16 @@
       "delay": 0
     },
     "popGesture": "close",
-    "launchwebview": {},
+    "launchwebview": {
+      "render": "always",
+      "id": "1",
+      "kernel": "WKWebview",
+      "uni-app": "auto"
+    },
     "statusbar": {
       "immersed": "supportedDevice",
       "style": "dark",
-      "background": "#F8F8F8"
+      "background": "#0081ff"
     },
     "usingComponents": true,
     "distribute": {
@@ -77,26 +82,16 @@
         }
       }
     },
+    "arguments": "{\"name\":\"表单\",\"query\":\"\",\"id\":0,\"pathName\":\"pages/start/start\"}",
     "allowsInlineMediaPlayback": true,
-    "safearea": {
-      "background": "#FFFFFF",
-      "bottom": {
-        "offset": "auto"
-      }
-    },
     "uni-app": {
-      "compilerVersion": "2.3.2",
+      "compilerVersion": "2.4.6",
       "control": "v8",
-      "nvueCompiler": "weex",
-      "renderer": "auto"
-    },
-    "secondwebview": {
-      "id": "1",
-      "launch_path": "__uniappview.html",
-      "kernel": "WKWebview",
-      "mode": "child",
-      "top": 0,
-      "bottom": 56
+      "nvueCompiler": "uni-app",
+      "renderer": "auto",
+      "nvue": {
+        "flex-direction": "column"
+      }
     }
   }
 }

@@ -1,0 +1,13 @@
+
+.hlg {
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 80rpx;
+}
+.fontx {
+	font-size: ;
+}
+.title {
+		margin-left: -850rpx;
+}
+

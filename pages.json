@@ -1,55 +1,41 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText":"哈理工校园服务号",
-				"navigationBarTextStyle":"white",
-				"navigationBarBackgroundColor":"#60C0D6",
-				"app-plus":{
-					"scrollIndicator":"none",
-					"bounce":"none"
-				}
+			{
+				"path" : "pages/start/start",
+				"style" : {}
+			}		
+			,{
+			    "path" : "pages/index/index",
+			    "style" : {}
 			}
-		}
-	],
+       ,{
+            "path" : "pages/course/course",
+            "style" : {}
+        }
+				
+        ,{
+            "path" : "pages/community/community",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/person/person",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#0081ff",
 		"navigationBarTitleText": "哈理工校园服务号",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black"
 	},
-	"tabBar":{
-		"color": "#B5B5B5",
-		"selectedColor": "#FA436A",
-		"borderStyle": "black",
-		"backgroundColor": "#FFFFFF",
-		"list": [
-			{
-				"pagePath": "pages/index/index",
-				"text": "首页",
-				"iconPath": "static/tabs/home.png",
-				"selectedIconPath": "static/tabs/home-ac.png"
-			},
-			{
-				"pagePath": "pages/index/index",
-				"text": "课表",
-				"iconPath": "static/tabs/course.png",
-				"selectedIconPath": "static/tabs/course-ac.png"
-			},
-			{
-				"pagePath": "pages/index/index",
-				"text": "社区",
-				"iconPath": "static/tabs/community.png",
-				"selectedIconPath": "static/tabs/community-ac.png"
-			},
-			{
-				"pagePath": "pages/index/index",
-				"text": "我的",
-				"iconPath": "static/tabs/personal.png",
-				"selectedIconPath": "static/tabs/personal-ac.png"
+	"usingComponts": true,
+		"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+				"name": "表单", //模式名称
+				"path": "pages/start/start", //启动页面
+				"query": "" //启动参数
 			}
 		]
-		
 	}
 }
