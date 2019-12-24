@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "divider": "/components/common/divider",
     "cu-custom-home": "/colorui/components/cu-custom-home"
   }
 }

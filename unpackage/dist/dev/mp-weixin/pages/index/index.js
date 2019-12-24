@@ -184,13 +184,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-
-
-
-
-
-
-
 {
   components: {
     cuCustomHome: cuCustomHome },
@@ -199,8 +192,31 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     return {
       PageCur: 'index',
       modalName: null,
-      swiperList: ['/static/index/banner1.jpg', '/static/index/banner2.jpg',
-      '/static/index/banner3.jpg'] };
+      swiperList: ['/static/index/banner1.jpg', '/static/index/banner2.jpg', '/static/index/banner3.jpg'],
+      category: [
+      { src: "/static/index/class2.jpg", title: "书籍" },
+      { src: "/static/index/class1.jpg", title: "电子" },
+      { src: "/static/index/class3.jpg", title: "日用" },
+      { src: "/static/index/class4.jpg", title: "美妆" },
+      { src: "/static/index/class5.jpg", title: "其他" }],
+
+      detailClass: [
+      {
+        title: "新书上架", src: "/static/index/goods/p4.jpg", describe: ["《ES6标准入门》", "西区十公寓", "red"] },
+
+      {
+        title: "电子产品", src: "/static/index/goods/p2.jpg", describe: ["华为畅享8S", "西区一公寓", "blue"] },
+
+      {
+        title: "生活日用", src: "/static/index/goods/p2.jpg", describe: ["白色智能台灯", "西区三公寓", "olive"] },
+
+      {
+        title: "美妆精品", src: "/static/index/goods/p5.jpg", describe: ["日本SKLL香水", "西区五公寓", "cyan"] },
+
+      {
+        title: "其他物品", src: "/static/index/goods/p7.jpg", describe: ["编个什么呢", "西区七公寓", "pink"] }] };
+
+
 
   },
   methods: {

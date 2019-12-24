@@ -20,6 +20,5 @@
     "person": "/pages/person/person",
     "cu-custom": "/colorui/components/cu-custom",
     "divider": "/components/common/divider"
-  },
-  "sitemapLocation": "sitemap23.json"
+  }
 }

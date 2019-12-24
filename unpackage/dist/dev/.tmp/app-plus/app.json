@@ -25,6 +25,7 @@
     "course": "/pages/course/course",
     "community": "/pages/community/community",
     "person": "/pages/person/person",
-    "cu-custom": "/colorui/components/cu-custom"
+    "cu-custom": "/colorui/components/cu-custom",
+    "divider": "/components/common/divider"
   }
 }
