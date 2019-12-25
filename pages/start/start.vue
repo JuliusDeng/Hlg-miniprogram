@@ -1,9 +1,9 @@
 <template>
 	<view>
 		<index v-if="PageCur=='index'"></index>
-		<course v-if="PageCur=='course'"></course>
 		<community v-if="PageCur=='community'"></community>
-		<personal v-if="PageCur=='personal'"></personal>
+		<course v-if="PageCur=='course'"></course>
+		<person v-if="PageCur=='personal'"></person>
 		
 		<view class="cu-bar tabbar bg-white shadow foot">
 			<view class="action" @click="NavChange" data-cur="index">
