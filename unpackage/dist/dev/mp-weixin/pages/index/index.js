@@ -105,7 +105,25 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var cuCustomHome = function cuCustomHome() {return __webpack_require__.e(/*! import() | colorui/components/cu-custom-home */ "colorui/components/cu-custom-home").then(__webpack_require__.bind(null, /*! @/colorui/components/cu-custom-home.vue */ 67));};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var cuCustomHome = function cuCustomHome() {return __webpack_require__.e(/*! import() | colorui/components/cu-custom-home */ "colorui/components/cu-custom-home").then(__webpack_require__.bind(null, /*! @/colorui/components/cu-custom-home.vue */ 87));};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -190,15 +208,19 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
   data: function data() {
     return {
-      PageCur: 'index',
-      modalName: null,
-      swiperList: ['/static/index/banner1.jpg', '/static/index/banner2.jpg', '/static/index/banner3.jpg'],
+      office: [
+      { src: "/static/indexnav/1.png", title: "考试安排", nav: "in-books" },
+      { src: "/static/indexnav/2.gif", title: "成绩查询", nav: "in-phone" },
+      { src: "/static/indexnav/3.gif", title: "校历寒假", nav: "in-life" },
+      { src: "/static/indexnav/4.gif", title: "校车时间", nav: "in-beauty" },
+      { src: "/static/indexnav/5.gif", title: "其他通知", nav: "in-others" }],
+
       category: [
-      { src: "/static/index/class2.jpg", title: "书籍" },
-      { src: "/static/index/class1.jpg", title: "电子" },
-      { src: "/static/index/class3.jpg", title: "日用" },
-      { src: "/static/index/class4.jpg", title: "美妆" },
-      { src: "/static/index/class5.jpg", title: "其他" }],
+      { src: "/static/indexnav/6.gif", title: "书籍", nav: "in-books" },
+      { src: "/static/indexnav/7.gif", title: "电子", nav: "in-phone" },
+      { src: "/static/indexnav/8.gif", title: "日用", nav: "in-life" },
+      { src: "/static/indexnav/9.gif", title: "美妆", nav: "in-beauty" },
+      { src: "/static/indexnav/10.gif", title: "其他", nav: "in-others" }],
 
       detailClass: [
       {
@@ -220,16 +242,16 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
   },
   methods: {
-    NavChange: function NavChange(e) {
-      this.PageCur = e.currentTarget.dataset.cur;
-      console.log(e);
-    },
-    showModal: function showModal(e) {
-      this.modalName = e.currentTarget.dataset.target;
-    },
-    hideModal: function hideModal(e) {
-      this.modalName = null;
+    event: function event(path) {
+      if (!path) return;
+      uni.navigateTo({
+        url: "/pages/".concat(path, "/").concat(path),
+        success: function success(res) {},
+        fail: function fail() {console.log("navigate 跳转失败");},
+        complete: function complete() {} });
+
     } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
@@ -260,7 +282,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 51:
+/***/ 41:
 /*!**********************************************************************************************!*\
   !*** C:/Users/15765/Desktop/Vue.前端/Hlg-miniprogram/main.js?{"page":"pages%2Findex%2Findex"} ***!
   \**********************************************************************************************/
@@ -277,5 +299,5 @@ createPage(_index.default);
 
 /***/ })
 
-},[[51,"common/runtime","common/vendor"]]]);
+},[[41,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/index/index.js.map

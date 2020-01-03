@@ -26,7 +26,7 @@ Vue.prototype.$navigate = function navigate(path) {
 		uni.navigateTo({
 			url: `/pages/${path}/${path}`,
 			success: res => {},
-			fail: () => {},
+			fail: () => {console.log("navigate 跳转失败");},
 			complete: () => {}
 		});
 	}

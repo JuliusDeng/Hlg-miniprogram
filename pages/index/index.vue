@@ -3,7 +3,7 @@
 		<!-- 顶部导航栏 -->
 		<cu-custom-home bgColor="bg-gradual-blue"><block slot="content">哈理工校园服务号</block></cu-custom-home>
 		<!-- 搜索框 -->
-		<view class="cu-bar search bg-white">
+		<!-- <view class="cu-bar search bg-white">
 			<view class="search-form round">
 				<text class="cuIcon-search"></text>
 				<input @focus="InputFocus" @blur="InputBlur" :adjust-position="false" type="text" 
@@ -12,20 +12,46 @@
 			<view class="action">
 				<button class="cu-btn bg-green shadow-blur round">搜索</button>
 			</view>
-		</view>
+		</view> -->
 		
 		<!-- 轮播图 -->
-		<swiper class="screen-swiper square-dot" :indicator-dots="true" :circular="true" :autoplay="true" 
-			interval="5000" duration="500" indicator-color="#8799a3" indicator-active-color="#0081ff">
-			<swiper-item v-for="(item,index) in swiperList" :key="index">
-				<image :src="item" class="imgx px-2 roundx"></image>
+		<swiper indicator-dots="true" indicator-color="green" indicator-active-color="blue" 
+		:autoplay="true" :interval="3000" :duration="500" circular="true" class="square-dot"
+		 style="width: 100%;height: 380rpx;">
+			<swiper-item class="m-3" >
+				<image src="../../static/temp/banner1.jpg" style="width: 690rpx;height: 300rpx;"
+				class="rounded-24"></image>
+			</swiper-item>
+			<swiper-item class="m-3" style="width: 690rpx;height: 300rpx;">
+				<image src="../../static/temp/banner2.jpg" style="width: 690rpx;height: 300rpx;"
+				class="rounded-24"></image>
+			</swiper-item>
+			<swiper-item class="m-3" style="width: 690rpx;height: 300rpx;">
+				<image src="../../static/temp/banner3.jpg" style="width: 690rpx;height: 300rpx;"
+				class="rounded-24"></image>
 			</swiper-item>
 		</swiper>
 		
 		<!-- 5个分类 -->
+			<!-- 教务处 -->
+		<view class="ml-3">
+			<text class="cuIcon-title text-cyan"></text>教务信息处
+		</view>
+		<view class="row j-center m-2">
+			<block v-for="(item, index) in office" :key="index">
+				<view class="span-4 d-flex flex-column j-center a-center py-1" @click="event(item.nav)">
+					<image :src=item.src mode="widthFix" style="width: 60rpx;height: 60rpx;"></image>
+					<text class="text-sm text-bold">{{item.title}}</text>
+				</view>
+			</block>
+		</view>
+			<!-- 物品交易栏 -->
+		<view class="ml-3">
+			<text class="cuIcon-title text-pink"></text>物品交易栏
+		</view>
 		<view class="cate-section">
 			<view v-for="(item, index) in category" :key="index">
-				<view class="cate-item">
+				<view class="cate-item" @click="event(item.nav)">
 					<image :src="item.src" class="imageClass"></image>
 					<text class="text-bold">{{item.title}}</text>
 				</view>
@@ -34,7 +60,7 @@
 		
 		<!-- 广告位 -->
 		<view class="d-flex j-center bg-white mb-2">
-			<image src="../../static/index/ad3.jpg" mode="widthFix" class="mx-2"></image>
+			<image src="/static/temp/banner4.jpg" mode="widthFix" class="mx-2"></image>
 		</view>
 		<!-- 分割线 -->
 		<divider></divider>
@@ -62,15 +88,7 @@
 				</view>
 			</view>
 		</view>
-			
 		
-		
-		
-		
-		<!-- 底部撑起 -->
-	  <view class="flex">
-	  	<view class="bottonx"></view>
-	  </view>
 	</view>
 </template>
 
@@ -83,15 +101,19 @@
 		},
 		data() {
 			return {
-				PageCur: 'index',
-				modalName: null,
-				swiperList: ['/static/index/banner1.jpg', '/static/index/banner2.jpg', '/static/index/banner3.jpg'],
+				office: [
+					{src: "/static/indexnav/1.png", title: "考试安排", nav: "in-books"},
+					{src: "/static/indexnav/2.gif", title: "成绩查询", nav: "in-phone"},
+					{src: "/static/indexnav/3.gif", title: "校历寒假", nav: "in-life"},
+					{src: "/static/indexnav/4.gif", title: "校车时间", nav: "in-beauty"},
+					{src: "/static/indexnav/5.gif", title: "其他通知", nav: "in-others"},
+				],
 				category: [
-					{src: "/static/index/class2.jpg", title: "书籍"},
-					{src: "/static/index/class1.jpg", title: "电子"},
-					{src: "/static/index/class3.jpg", title: "日用"},
-					{src: "/static/index/class4.jpg", title: "美妆"},
-					{src: "/static/index/class5.jpg", title: "其他"},
+					{src: "/static/indexnav/6.gif", title: "书籍", nav: "in-books"},
+					{src: "/static/indexnav/7.gif", title: "电子", nav: "in-phone"},
+					{src: "/static/indexnav/8.gif", title: "日用", nav: "in-life"},
+					{src: "/static/indexnav/9.gif", title: "美妆", nav: "in-beauty"},
+					{src: "/static/indexnav/10.gif", title: "其他", nav: "in-others"},
 				],
 				detailClass: [
 					{
@@ -113,36 +135,21 @@
 			}
 		},
 		methods: {
-			NavChange: function(e) {
-				this.PageCur = e.currentTarget.dataset.cur
-				console.log(e);
-			},
-			showModal(e) {
-				this.modalName = e.currentTarget.dataset.target
-			},
-			hideModal(e) {
-				this.modalName = null
+			event(path) {
+				if(!path) return;
+				uni.navigateTo({
+					url: `/pages/${path}/${path}`,
+					success: res => {},
+					fail: () => {console.log("navigate 跳转失败");},
+					complete: () => {}
+				});
 			}
-			
 			
 		},
 	}
 </script>
 
 <style>
-	.bottonx {
-		background: #007AFF;
-		min-height: 100upx;
-		padding: 0;
-		height: calc(100upx + env(safe-area-inset-bottom) / 2);
-		padding-bottom: calc(env(safe-area-inset-bottom) / 2);
-	}
-	.imgx {
-		height: 160upx;
-	}
-	.roundx {
-		border-radius: 12upx !important;
-	}
 	.cate-section{
 		display: flex;
 		justify-content: space-around;

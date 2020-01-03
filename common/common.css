@@ -13,7 +13,7 @@ image{width: 100%;}
 
 /* 主色调 */
 /* 主背景颜色（橙色） */
-.main-bg-color{background: #fd6801;}
+.main-bg-color{background: #F5F5F5;}
 /* 主点击背景颜色（淡橙色） */
 .main-bg-hover-color{background: rgba(253, 104, 1, 0.85);}
 /* 主字体颜色（橙色） */

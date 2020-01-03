@@ -1,17 +1,50 @@
 {
   "pages": [
-    "pages/start/start",
     "pages/index/index",
     "pages/course/course",
     "pages/community/community",
-    "pages/person/person"
+    "pages/person/person",
+    "pages/in-books/in-books",
+    "pages/in-phone/in-phone",
+    "pages/in-life/in-life",
+    "pages/in-beauty/in-beauty",
+    "pages/in-others/in-others"
   ],
   "subPackages": [],
   "window": {
     "navigationBarBackgroundColor": "#0081ff",
     "navigationBarTitleText": "哈理工校园服务号",
-    "navigationStyle": "custom",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/index.png",
+        "selectedIconPath": "static/tabbar/index-ac.png"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "课表",
+        "iconPath": "static/tabbar/course.png",
+        "selectedIconPath": "static/tabbar/course-ac.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "教务",
+        "iconPath": "static/tabbar/community.png",
+        "selectedIconPath": "static/tabbar/community-ac.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "static/tabbar/personal.png",
+        "selectedIconPath": "static/tabbar/personal-ac.png"
+      }
+    ]
   },
   "usingComponents": {
     "index": "/pages/index/index",

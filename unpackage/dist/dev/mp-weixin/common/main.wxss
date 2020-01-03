@@ -135,7 +135,7 @@ page{
 image{width: 100%;}
 /* 主色调 */
 /* 主背景颜色（橙色） */
-.main-bg-color{background: #fd6801;}
+.main-bg-color{background: #F5F5F5;}
 /* 主点击背景颜色（淡橙色） */
 .main-bg-hover-color{background: rgba(253, 104, 1, 0.85);}
 /* 主字体颜色（橙色） */
@@ -5468,19 +5468,6 @@ scroll-view.cu-steps .cu-item {
 }
 
 
-.bottonx {
-	background: #007AFF;
-	min-height: 100rpx;
-	padding: 0;
-	height: calc(100rpx + env(safe-area-inset-bottom) / 2);
-	padding-bottom: calc(env(safe-area-inset-bottom) / 2);
-}
-.imgx {
-	height: 160rpx;
-}
-.roundx {
-	border-radius: 12rpx !important;
-}
 .cate-section{
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -5515,15 +5502,6 @@ scroll-view.cu-steps .cu-item {
 	border-radius: 50%;
 	/* opacity: .7; */
 	box-shadow: 4rpx 4rpx 20rpx rgba(250, 67, 106, 0.3);
-}
-
-
-.bottonx {
-	background: #007AFF;
-	min-height: 100rpx;
-	padding: 0;
-	height: calc(100rpx + env(safe-area-inset-bottom) / 2);
-	padding-bottom: calc(env(safe-area-inset-bottom) / 2);
 }
 
 

@@ -24,15 +24,8 @@
       "list": []
     },
     "miniprogram": {
-      "current": 0,
-      "list": [
-        {
-          "name": "表单",
-          "query": "",
-          "id": 0,
-          "pathName": "pages/start/start"
-        }
-      ]
+      "current": -1,
+      "list": []
     }
   }
 }
