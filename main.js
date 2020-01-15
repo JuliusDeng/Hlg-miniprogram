@@ -4,18 +4,6 @@ import store from './store/index.js'
 
 Vue.prototype.$store = store
 
-import index from './pages/index/index.vue'
-Vue.component('index',index)
-
-import course from './pages/course/course.vue'
-Vue.component('course',course)
-
-import community from './pages/community/community.vue'
-Vue.component('community',community)
-
-import person from './pages/person/person.vue'
-Vue.component('person',person)
-
 import cuCustom from './colorui/components/cu-custom.vue'
 Vue.component('cu-custom',cuCustom)
 

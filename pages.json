@@ -1,50 +1,28 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-			{
-			    "path" : "pages/index/index",
-			    "style" : {
-						"navigationStyle": "custom"
-					}
-			},
-      {
-            "path" : "pages/course/course",
-            "style" : {
-							// "navigationStyle": "custom"
-							"navigationBarTitleText": "教务系统中心"
-						}
-      }
-      ,{
-            "path" : "pages/community/community",
-            "style" : {
-							"navigationStyle": "custom"
-						}
-        }
-        ,{
-            "path" : "pages/person/person",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/in-books/in-books",
-            "style" : {
-							// "navigationStyle": "custom"
-						}
-        }
-        ,{
-            "path" : "pages/in-phone/in-phone",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/in-life/in-life",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/in-beauty/in-beauty",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/in-others/in-others",
-            "style" : {}
-        }
+	"pages": [
+		{
+			"path": "pages/person/person",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFD84D"
+			}
+		}, {
+			"path": "pages/classify/classify",
+			"style": {
+				"navigationBarTitleText": "物品分类"
+			}
+		}, {
+			"path": "pages/course/course",
+			"style": {
+				"navigationBarTitleText": "课表"
+			}
+		}, {
+			"path" : "pages/index/index",
+			"style" : {
+				"navigationStyle": "custom"
+			}
+		}	
     ],
 	"globalStyle": {
 		"navigationBarBackgroundColor": "#0081ff",
@@ -61,16 +39,16 @@
 				"text": "首页",
 				"iconPath": "static/tabbar/index.png",
 				"selectedIconPath":"static/tabbar/index-ac.png"
-			},{
+			}, {
+				"pagePath":"pages/classify/classify",
+				"text":"分类",
+				"iconPath":"static/tabbar/community.png",
+				"selectedIconPath":"static/tabbar/community-ac.png"
+			}, {
 				"pagePath": "pages/course/course",
 				"text": "课表",
 				"iconPath":"static/tabbar/course.png",
 				"selectedIconPath":"static/tabbar/course-ac.png"
-			}, {
-				"pagePath":"pages/community/community",
-				"text":"教务",
-				"iconPath":"static/tabbar/community.png",
-				"selectedIconPath":"static/tabbar/community-ac.png"
 			}, {
 				"pagePath":"pages/person/person",
 				"text":"我的",

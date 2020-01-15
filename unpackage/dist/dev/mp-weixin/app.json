@@ -1,14 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/course/course",
-    "pages/community/community",
     "pages/person/person",
-    "pages/in-books/in-books",
-    "pages/in-phone/in-phone",
-    "pages/in-life/in-life",
-    "pages/in-beauty/in-beauty",
-    "pages/in-others/in-others"
+    "pages/classify/classify",
+    "pages/course/course",
+    "pages/index/index"
   ],
   "subPackages": [],
   "window": {
@@ -27,16 +22,16 @@
         "selectedIconPath": "static/tabbar/index-ac.png"
       },
       {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "static/tabbar/community.png",
+        "selectedIconPath": "static/tabbar/community-ac.png"
+      },
+      {
         "pagePath": "pages/course/course",
         "text": "课表",
         "iconPath": "static/tabbar/course.png",
         "selectedIconPath": "static/tabbar/course-ac.png"
-      },
-      {
-        "pagePath": "pages/community/community",
-        "text": "教务",
-        "iconPath": "static/tabbar/community.png",
-        "selectedIconPath": "static/tabbar/community-ac.png"
       },
       {
         "pagePath": "pages/person/person",
@@ -47,12 +42,7 @@
     ]
   },
   "usingComponents": {
-    "index": "/pages/index/index",
-    "course": "/pages/course/course",
-    "community": "/pages/community/community",
-    "person": "/pages/person/person",
     "cu-custom": "/colorui/components/cu-custom",
     "divider": "/components/common/divider"
-  },
-  "sitemapLocation": "sitemap97.json"
+  }
 }
