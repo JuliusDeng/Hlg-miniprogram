@@ -113,6 +113,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  if (!_vm._isMounted) {
+    _vm.e0 = function($event) {
+      return this.$navigate("index")
+    }
+  }
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -202,6 +207,19 @@ var _default =
 
   },
   methods: {
+    userLogin: function userLogin() {
+      uni.login({
+        success: function success(data) {
+          console.log(data, '--login');
+        },
+        fail: function fail(data) {
+          console.log('--fail');
+        },
+        complete: function complete() {
+          console.log("--complete");
+        } });
+
+    },
     userMsg: function userMsg() {var _this = this;
       uni.getUserInfo({
         success: function success(data) {
@@ -219,6 +237,7 @@ var _default =
     },
     getUserInfo: function getUserInfo(data) {
       console.log(data, '---111data');
+      this.userLogin();
       if (data.mp.detail.rawData) {
         this.userMsg();
       }

@@ -44,5 +44,6 @@
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom",
     "divider": "/components/common/divider"
-  }
+  },
+  "sitemapLocation": "sitemap72.json"
 }

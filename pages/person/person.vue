@@ -20,7 +20,7 @@
 			
 		</view>
 		<!-- 广告图 -->
-		<image src="../../static/person/ad2.jpg" class="p-2" mode="widthFix"></image>
+		<image src="../../static/person/ad2.jpg" class="p-2" mode="widthFix" @click="this.$navigate('index')"></image>
 		<!-- 物品专栏 -->
 		<view class="mx-2 bg-white rounded-24 py-2 mt-2">
 			<view class="text-bold text-df text-black pl-2">物品专栏</view>
@@ -49,6 +49,9 @@
 </template>
 
 <script>
+	import $request from "@/common/lib/request.js"
+	
+	
 	export default {
 		data() {
 			return {
@@ -56,6 +59,19 @@
 			}
 		},
 		methods: {
+			userLogin() {
+				uni.login({
+					success: (data) => {
+						console.log(data, '--login');
+					},
+					fail: (data) => {
+						console.log('--fail');
+					},
+					complete: () => {
+						console.log("--complete");
+					}
+				})
+			},
 			userMsg() {
 				uni.getUserInfo({
 					success: (data) => {
@@ -73,6 +89,7 @@
 			},
 			getUserInfo(data) {
 				console.log(data, '---111data');
+				this.userLogin()
 				if(data.mp.detail.rawData) {
 					this.userMsg()
 				}
