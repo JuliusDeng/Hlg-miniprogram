@@ -1,1 +1,0 @@
-<view><view class="cu-custom" style="{{'height:'+(CustomBar+'px')+';'}}"><view class="{{['cu-bar fixed',bgImage!=''?'none-bg text-white bg-img':'',bgColor]}}" style="{{(style)}}"><image class="d-flex hlg ml-5" src="../../static/index/hlg.jpg" mode></image><view class="content" style="{{'top:'+(StatusBar+'px')+';'}}"><slot name="content"></slot></view></view></view></view>

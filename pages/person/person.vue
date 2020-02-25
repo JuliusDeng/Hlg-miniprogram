@@ -42,7 +42,7 @@
 		
 		<!-- 底部 -->
 		<view class="d-flex j-center a-center mt-3">
-			@2020 邓宇辰 周仁倾情奉献
+			@2020 邓宇辰 倾情奉献
 		</view>
 		
 	</view>

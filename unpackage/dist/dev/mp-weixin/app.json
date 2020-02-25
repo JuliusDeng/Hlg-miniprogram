@@ -1,19 +1,21 @@
 {
   "pages": [
-    "pages/person/person",
+    "pages/co-login/co-login",
     "pages/classify/classify",
     "pages/course/course",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/person/person"
   ],
   "subPackages": [],
   "window": {
     "navigationBarBackgroundColor": "#0081ff",
-    "navigationBarTitleText": "哈理工校园服务号",
+    "navigationBarTitleText": "重庆大学校园服务号",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#bfbfbf",
-    "selectedColor": "#d81e06",
+    "selectedColor": "#fa436a",
+    "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -28,7 +30,7 @@
         "selectedIconPath": "static/tabbar/community-ac.png"
       },
       {
-        "pagePath": "pages/course/course",
+        "pagePath": "pages/co-login/co-login",
         "text": "课表",
         "iconPath": "static/tabbar/course.png",
         "selectedIconPath": "static/tabbar/course-ac.png"
@@ -42,8 +44,7 @@
     ]
   },
   "usingComponents": {
-    "cu-custom": "/colorui/components/cu-custom",
     "divider": "/components/common/divider"
   },
-  "sitemapLocation": "sitemap72.json"
+  "sitemapLocation": "sitemap40.json"
 }

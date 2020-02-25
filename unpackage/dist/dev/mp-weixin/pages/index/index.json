@@ -1,6 +1,0 @@
-{
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "cu-custom-home": "/colorui/components/cu-custom-home"
-  }
-}

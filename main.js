@@ -4,8 +4,6 @@ import store from './store/index.js'
 
 Vue.prototype.$store = store
 
-import cuCustom from './colorui/components/cu-custom.vue'
-Vue.component('cu-custom',cuCustom)
 
 // 引入全局分割线
 import divider from "@/components/common/divider.vue"

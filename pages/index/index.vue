@@ -1,7 +1,7 @@
 <template>
 	<view class="bg-white">
 		<!-- 顶部导航栏 -->
-		<cu-custom-home bgColor="bg-gradual-blue"><block slot="content">哈理工校园服务号</block></cu-custom-home>
+		<cu-custom-home bgColor="bg-gradual-blue"><block slot="content">重庆大学校园服务号</block></cu-custom-home>
 		<!-- 搜索框 -->
 		<!-- <view class="cu-bar search bg-white">
 			<view class="search-form round">

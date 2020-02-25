@@ -1,60 +1,63 @@
 {
-	"pages": [
-		{
-			"path": "pages/person/person",
-			"style": {
-				"navigationBarTitleText": "个人中心",
-				"navigationBarTextStyle": "black",
-				"navigationBarBackgroundColor": "#FFD84D"
-			}
-		}, {
-			"path": "pages/classify/classify",
-			"style": {
-				"navigationBarTitleText": "物品分类"
-			}
-		}, {
-			"path": "pages/course/course",
-			"style": {
-				"navigationBarTitleText": "课表"
-			}
-		}, {
-			"path" : "pages/index/index",
-			"style" : {
-				"navigationStyle": "custom"
-			}
+	"pages": [{
+		"path": "pages/co-login/co-login",
+		"style": {
+			"navigationBarTitleText": "",
+			"navigationStyle": "custom"
 		}
-    ],
+	}, {
+		"path": "pages/classify/classify",
+		"style": {
+			"navigationBarTitleText": "物品分类"
+		}
+	}, {
+		"path": "pages/course/course",
+		"style": {
+			"navigationBarTitleText": "课表"
+		}
+	}, {
+		"path": "pages/index/index",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/person/person",
+		"style": {
+			"navigationBarTitleText": "个人中心",
+			"navigationBarTextStyle": "black",
+			"navigationBarBackgroundColor": "#FFD84D"
+		}
+	}],
 	"globalStyle": {
 		"navigationBarBackgroundColor": "#0081ff",
-		"navigationBarTitleText": "哈理工校园服务号",
+		"navigationBarTitleText": "重庆大学校园服务号",
 		// "navigationStyle": "custom",
 		"navigationBarTextStyle": "white"
 	},
 	"tabBar": {
 		"color": "#bfbfbf",
-		"selectedColor": "#d81e06",
-		"list": [
-			{
-				"pagePath":"pages/index/index",
-				"text": "首页",
-				"iconPath": "static/tabbar/index.png",
-				"selectedIconPath":"static/tabbar/index-ac.png"
-			}, {
-				"pagePath":"pages/classify/classify",
-				"text":"分类",
-				"iconPath":"static/tabbar/community.png",
-				"selectedIconPath":"static/tabbar/community-ac.png"
-			}, {
-				"pagePath": "pages/course/course",
-				"text": "课表",
-				"iconPath":"static/tabbar/course.png",
-				"selectedIconPath":"static/tabbar/course-ac.png"
-			}, {
-				"pagePath":"pages/person/person",
-				"text":"我的",
-				"iconPath":"static/tabbar/personal.png",
-				"selectedIconPath":"static/tabbar/personal-ac.png"
-			}
-		]
+		"selectedColor": "#fa436a",
+		"borderStyle": "black",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"text": "首页",
+			"iconPath": "static/tabbar/index.png",
+			"selectedIconPath": "static/tabbar/index-ac.png"
+		}, {
+			"pagePath": "pages/classify/classify",
+			"text": "分类",
+			"iconPath": "static/tabbar/community.png",
+			"selectedIconPath": "static/tabbar/community-ac.png"
+		}, {
+			"pagePath": "pages/co-login/co-login",
+			"text": "课表",
+			"iconPath": "static/tabbar/course.png",
+			"selectedIconPath": "static/tabbar/course-ac.png"
+		}, {
+			"pagePath": "pages/person/person",
+			"text": "我的",
+			"iconPath": "static/tabbar/personal.png",
+			"selectedIconPath": "static/tabbar/personal-ac.png"
+		}]
 	}
 }

@@ -3,7 +3,7 @@
 		<view class="cu-custom" :style="[{height:CustomBar + 'px'}]">
 			<view class="cu-bar fixed" :style="style" 
 			:class="[bgImage!=''?'none-bg text-white bg-img':'',bgColor]">
-				<image src="../../static/index/hlg.jpg" class="d-flex hlg ml-5" mode=""></image>
+				<image src="../../static/index/cquni.jpg" class="d-flex hlg ml-5" mode=""></image>
 				<!-- <view class="title">
 					哈理工校园服务号
 				</view> -->
