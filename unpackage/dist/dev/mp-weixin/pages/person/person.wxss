@@ -1,0 +1,8 @@
+
+.bgcolor {
+	background-color: #FFD84D;
+}
+.border-radu{
+	border-radius: 0 0 24rpx 24rpx;
+}
+

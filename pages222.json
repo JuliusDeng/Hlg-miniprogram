@@ -1,0 +1,83 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+			{
+			    "path" : "pages/index/index",
+			    "style" : {
+						"navigationStyle": "custom"
+					}
+			},
+      {
+					"path" : "pages/class/class",
+					"style" : {
+						"navigationBarTitleText":"物品分类"
+					}
+						
+      }
+      ,{
+          "path" : "pages/course/course",
+          "style" : {
+          	// "navigationStyle": "custom"
+          	"navigationBarTitleText": "教务系统中心"
+          }  
+        }
+        ,{
+            "path" : "pages/person/person",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/in-books/in-books",
+            "style" : {
+							// "navigationStyle": "custom"
+						}
+        }
+        ,{
+            "path" : "pages/in-phone/in-phone",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/in-life/in-life",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/in-beauty/in-beauty",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/in-others/in-others",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarBackgroundColor": "#0081ff",
+		"navigationBarTitleText": "哈理工校园服务号",
+		// "navigationStyle": "custom",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"color": "#bfbfbf",
+		"selectedColor": "#d81e06",
+		"list": [
+			{
+				"pagePath":"pages/index/index",
+				"text": "首页",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath":"static/tabbar/index-ac.png"
+			},{
+				"pagePath":"pages/class/class",
+				"text":"分类",
+				"iconPath":"static/tabbar/community.png",
+				"selectedIconPath":"static/tabbar/community-ac.png"
+			}, {
+				"pagePath": "pages/course/course",
+				"text": "课表",
+				"iconPath":"static/tabbar/course.png",
+				"selectedIconPath":"static/tabbar/course-ac.png"
+			}, {
+				"pagePath":"pages/person/person",
+				"text":"我的",
+				"iconPath":"static/tabbar/personal.png",
+				"selectedIconPath":"static/tabbar/personal-ac.png"
+			}
+		]
+	}
+}
